@@ -1,7 +1,8 @@
 ## Основные ссылки
+<pre>
 1.Netlify - https://dilovar-products.netlify.app/
 2.github - https://github.com/DeadRock1993/products
-
+</pre>
 ## Что использовалось в работе:
 <pre>
 1.React
