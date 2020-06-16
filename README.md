@@ -9,6 +9,7 @@
 4.Netlify with github Continuous Integration
 
 ## Основые компоненты/дерево
+```
 ├───public/
 │   ├───favicon.ico
 │   ├───index.html
