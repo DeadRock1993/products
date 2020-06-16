@@ -3,11 +3,12 @@
 2.github - https://github.com/DeadRock1993/products
 
 ## Что использовалось в работе:
+<pre>
 1.React
 2.Bootstrap lib
 3.FontAwesome
 4.Netlify with github Continuous Integration
-
+</pre>
 ## Основые компоненты/дерево
 ```
 ├───public/
