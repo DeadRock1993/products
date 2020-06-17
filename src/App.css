@@ -163,7 +163,6 @@ a {
 }
 .list--unit-desc .unit--desc-i {
   float: left;
-  display: inline-block;
   vertical-align: top;
   width: 15px;
   height: 15px;

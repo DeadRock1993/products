@@ -44,7 +44,7 @@ class Product extends Component {
     }));
   };
   componentDidMount() {
-    let testImg = document.getElementById("test");
+    let testImg = document.getElementById("img220");
     var pos = testImg.src.lastIndexOf(".");
     let str = testImg.src;
     str = str.substring(0, pos) + "_220x220_1." + str.substring(pos + 1);
@@ -84,7 +84,7 @@ class Product extends Component {
       <div className="col-lg-3 col-md-4 col-sm-6 mt-5">
         <div className="productBox">
           <div className="imgRestriction">
-            <img id="test" className="img-fluid" src={img} alt="product" />
+            <img id="img220" className="img-fluid" src={img} alt="product" />
             <span className="product_status">Наличие</span>
             <div className="price-top">
               <span className="codeOfProduct">Код:{code}</span>
