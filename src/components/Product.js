@@ -43,20 +43,13 @@ class Product extends Component {
       typePackage: !prevState.typePackage,
     }));
   };
-  componentDidMount() {
-    let testImg = document.getElementById("img220");
-    var pos = testImg.src.lastIndexOf(".");
-    let str = testImg.src;
-    str = str.substring(0, pos) + "_220x220_1." + str.substring(pos + 1);
-  }
   render() {
     const { productsData } = this.props;
     const code = parseInt(productsData.code, 10);
-    let str = productsData.primaryImageUrl;
-    let position = str.lastIndexOf(".");
-    str =
-      str.substring(0, position) + "_220x220_1." + str.substring(position + 1);
-    const img = str;
+    let img = productsData.primaryImageUrl;
+    let position = img.lastIndexOf(".");
+    img =
+      img.substring(0, position) + "_220x220_1." + img.substring(position + 1);
     const title = productsData.title;
     const assocProducts = productsData.assocProducts
       .split(";")
@@ -100,12 +93,8 @@ class Product extends Component {
             <span>
               <b>Могут понадобиться:</b>
             </span>
-            {assocProducts.map((text) => (
-              <a
-                key={text + Math.random() * 100}
-                href="#"
-                className="url--link"
-              >
+            {assocProducts.map((text, index) => (
+              <a key={text + index} href="#" className="url--link">
                 {assocProducts.indexOf(text) === assocProducts.length - 1
                   ? `${text}.`
                   : `${text},`}

@@ -9,8 +9,8 @@ class ProductList extends React.Component {
   render() {
     return (
       <div className="row">
-        {productsData.map((data) => (
-          <Product key={data.title + Math.random() * 100} productsData={data} />
+        {productsData.map((data, index) => (
+          <Product key={data.title + index} productsData={data} />
         ))}
       </div>
     );
